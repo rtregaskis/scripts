@@ -129,6 +129,7 @@ function addHost {
 function listHosts {
 	declare -a ARRAY
 	let count=0
+	let i=0
 
 	while read LINE           
 	do           
@@ -151,6 +152,7 @@ function listHosts {
 function removeHost {
 	declare -a ARRAY
 	let count=0
+	let i=0
 	local CAPTURE=1
 	local FILE=$1
 	echo "Remove host by port: $PORT from $FILE"
