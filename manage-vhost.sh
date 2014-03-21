@@ -139,7 +139,9 @@ function listHosts {
 		fi
 	done < $HOSTS
 	echo "Available hosts:"
-	echo ${ARRAY[@]}
+	for (( i=0;i<$count;i++)); do
+    	echo "${ARRAY[${i}]}"
+	done 
 }
 
 ##
