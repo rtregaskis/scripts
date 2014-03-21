@@ -34,7 +34,7 @@ function timetamp {
 ##
 # Display help for tool
 function usage {
-	echo "usage: add-vhost -n NAME -p PORT -d DIRECTORY"
+	echo "usage: manage-vhost -n NAME -p PORT -d DIRECTORY"
 	echo "-h : this usage message"
 	echo "-l : list virtual hosts"
 	echo "-n <name> : name of site, i.e. product name"
@@ -43,7 +43,8 @@ function usage {
 	echo "-r <port> : remove virtual host on this port"
 	echo "NB: arguments can be given in any order."
 	echo ""
-	echo "example: add-vhost -n mysite -p 9999 -d ~/path/to/site/"
+	echo "Run with no arguments for interactive mode"
+	echo "example: manage-vhost -n mysite -p 9999 -d ~/path/to/site/"
 	echo "On completion, the site will be available at localhost:9999"
 }
 
