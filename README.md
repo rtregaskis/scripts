@@ -12,4 +12,8 @@ manage-vhosts.sh
  * Use `sudo ./manage-vhosts.sh -h` to get usage instructions.
  * Run with no arguments to be guided through virtual host setup.
 
+fix-html-entity.sh
+------------------
+
+ * convert UTF-8 character in reference files to correspnding HTML entity codes.
 
